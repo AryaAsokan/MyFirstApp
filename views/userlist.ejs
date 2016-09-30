@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Userlist</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <form> 
+    <h1>Users</h1>
+    <br>
+    <div>
+      <a href="#"><%= userlist%></a>
+<ul>
+    <% for(var i=0; i<userlist.length; i++) { %>
+        <li>
+            <a href='#'>
+                <%= userlist[i].email %>
+            </a><br>
+            <%= userlist[i].username %>
+        </li>
+    <% } %>
+</ul>
+    </div>
+  
+</form>
+  </body>
+
+</html>

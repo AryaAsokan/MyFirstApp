@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+   </head>
+    <body>
+    <script type="text/javascript" src="/javascripts/getthemodal.js"></script>
+      <form>
+        <div class= "header">
+          <h1><%= title %></h1>
+         </div>
+        <div class="menu">
+         <ul>
+          <li><a href="#">Shop Items</a></li>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#recipies">Recipies</a></li>
+          <li><input type="text"></li>
+          <li id="searchli"><a href="#about"><img id="search" src="/images/search.png"></a></li>
+          <li style="float:right; max-width:10%;"><a href="#about">Cart<img id="cart"src="/images/cart.png"></a></li>
+          <li style="float:right;"><a href="#about">Sign Up</a></li>
+          <li style="float:right;"><a href="#about" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+          </ul>
+        </div>
+        </form>
+        <div id="id01" class="modal">
+          <form id="login" class="modal-content animate" action="#">
+          <h2>Login</h2>
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="/images/user.jpg" alt="Login" class="login">
+            </div>
+
+            <div class="container">
+              <label><b>Username</b></label>
+              <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+
+              <label><b>Password</b></label>
+              <input type="password" id="pwd" placeholder="Enter Password" name="psw" required>
+        
+              <button type="submit">Login</button>
+              <input type="checkbox" checked="checked"> Remember me
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+         </div>
+         <form name="slider">
+          <div class="w3-content" style="max-width:800px;position:relative;margin-left: 9%;margin-top:6%">
+
+            <img class="mySlides" src="/images/v1.jpg" style="width:100%;height:398px">
+            <img class="mySlides" src="/images/v2.jpg" style="width:100%;height:398px">
+            <img class="mySlides" src="/images/v3.jpg" style="width:100%;height:398px">
+            <img class="mySlides" src="/images/v4.jpg" style="width:100%;height:398px">
+
+            <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+            <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+          </div>
+          <script type="text/javascript" src="/javascripts/slider.js"></script>
+         </form>
+
+      <div class="one">
+    	 <img src="">
+      </div>
+      <div class="two">
+    	 <img src="">
+      </div>
+      <div class="three"> 
+    	 <img src="">
+      
+    
+  </body>
+
+</html>
